@@ -8,15 +8,12 @@
     ?>
     <?php include "checkCookie.php" ?>
     <div >
-        <a href="index.php"><img src="images/logo.PNG" alt="Cosmos Ciné"></a>
+        <a href="index.php"><img src="images/logo.jpeg" alt="Cosmos Ciné"></a>
     </div>
     <nav>
         <a class="<?php if($page == "index.php"){echo "active";} ?>" href="index.php"><i class="fa fa-home"></i><?php echo $header->nav->home->$langue; ?></a>
         <a  class="<?php if($page == "catalogue.php"){echo "active";} ?>" href="catalogue.php"><i class="fa fa-book"></i><?php echo $header->nav->catalogue->$langue; ?></a>
         <a  class="<?php if($page == "a_propos.php"){echo "active";} ?>" href="a_propos.php"><i class="fa fa-id-card"></i><?php echo $header->nav->about->$langue; ?></a>
-        <a  class="<?php if($page == "studios.php"){echo "active";} ?>" href="studios.php"><i class="fa-solid fa-film"></i><?php echo $header->nav->Studios->$langue; ?></a>
-        <a  class="<?php if($page == "acteurs.php"){echo "active";} ?>" href="acteurs.php"><i class="fa-solid fa-users"></i><?php echo $header->nav->acteurs->$langue; ?></a>
-        
     </nav>
     <form class='langueControl' method='post' action='action/langControl.php'> 
         <div>
