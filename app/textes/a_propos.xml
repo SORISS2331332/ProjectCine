@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<about>
+    <titre>
+        <EN>
+            About us
+        </EN>
+        <FR>
+            A Propros de Nous
+        </FR>
+    </titre>
+    <table>
+        <colonne>
+            <titre>
+                <EN>
+                    Adress 
+                </EN>
+                <FR>
+                    Adresse
+                </FR>
+            </titre>
+            <contenu>
+                <EN>
+                    2345 Street of Life, QC, Canada
+                </EN>
+                <FR>
+                    2345 Rue de la Vie, QC, Canada
+                </FR>
+            </contenu>
+        </colonne>
+        <colonne>
+            <titre>
+                <EN>
+                    Number of employees
+                </EN>
+                <FR>
+                    Nombre d'employés
+                </FR>
+            </titre>
+            <contenu>
+                <EN>
+                    23 
+                </EN>
+                <FR>
+                    23
+                </FR>
+            </contenu>
+        </colonne>
+        <colonne>
+            <titre>
+                <EN>
+                    Annual Income
+                </EN>
+                <FR>
+                    Revenu Annuel
+                </FR>
+            </titre>
+            <contenu>
+                <EN>
+                    $ 545 000 
+                </EN>
+                <FR>
+                    545 000 $
+                </FR>
+            </contenu>
+        </colonne>
+        <colonne>
+            <titre>
+                <EN>
+                    Do employees work weekends ?
+                </EN>
+                <FR>
+                    Est ce que les employés travaillent la fin de semaine ?
+                </FR>
+            </titre>
+            <contenu>
+                <EN>
+                    YES
+                </EN>
+                <FR>
+                    OUI
+                </FR>
+            </contenu>
+        </colonne>
+    </table>
+</about>

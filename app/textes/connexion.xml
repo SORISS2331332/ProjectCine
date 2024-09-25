@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connexion>
+    <titre>
+        <EN>
+            Login 
+        </EN>
+        <FR>
+            Connexion 
+        </FR>
+    </titre>
+    <messages>
+        <message>
+            <EN>
+                Please provide a user and password
+            </EN>
+            <FR>
+                Veuillez fournir  un utlisateur et un mot de passe
+            </FR>
+        </message>
+        <message>
+            <EN>
+                Wrong user or password
+            </EN>
+            <FR>
+                Mauvais utilisateur ou mot de passe
+            </FR>
+        </message>
+    </messages>
+    <formulaire>
+        <email>
+            <EN>
+                Email
+            </EN>
+            <FR>
+                Courriel
+            </FR>
+        </email>
+        <password>
+            <EN>
+                Password
+            </EN>
+            <FR>
+                Mot de passe
+            </FR>
+        </password>
+        <select>
+            <EN>
+                Language :
+            </EN>
+            <FR>
+                Langue :
+            </FR>
+        </select>
+        <login>
+            <EN>
+                Login
+            </EN>
+            <FR>
+                Se connecter
+            </FR>
+        </login>
+        <compte1>
+            <EN>
+                No Account ?
+            </EN>
+            <FR>
+                Pas de compte ?
+            </FR>
+        </compte1>
+        <compte2>
+            <EN>
+                Create one !
+            </EN>
+            <FR>
+                Créez-en un !
+            </FR>
+        </compte2>
+    </formulaire>
+</connexion>

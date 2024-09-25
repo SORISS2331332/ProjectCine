@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selection>
+    <filtre>
+        <titre>
+            <EN>
+                Filter
+            </EN>
+            <FR>
+                Filtrer
+            </FR>
+        </titre>
+        <options>
+            <option>
+                <EN>
+                    Documentary
+                </EN>
+                <FR>
+                    Documentaire
+                </FR>
+            </option>
+            <option>
+                <EN>
+                    Drama
+                </EN>
+                <FR>
+                    Drame
+                </FR>
+            </option>
+            <option>
+                <EN>
+                    Horror
+                </EN>
+                <FR>
+                    Horreur
+                </FR>
+            </option>
+            <option>
+                <EN>
+                    Comedy
+                </EN>
+                <FR>
+                    Comédie
+                </FR>
+            </option>
+        </options>
+    </filtre>
+    
+
+    <trier>
+        <titre>
+            <EN>
+                Sort By 
+            </EN>
+            <FR>
+                Trier Par
+            </FR>
+        </titre>
+        <options>
+            <option>
+                <EN>
+                    Title
+                </EN>
+                <FR>
+                    Titre
+                </FR>
+            </option>
+            <option>
+                <EN>
+                    Rate
+                </EN>
+                <FR>
+                    Note
+                </FR>
+            </option>
+            
+        </options>
+    </trier>
+</selection>

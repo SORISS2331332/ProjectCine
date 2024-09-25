@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+    <titre>
+        <EN>
+            Home
+        </EN>
+        <FR>
+            Accueil
+        </FR>
+    </titre>
+    <textes>
+        <texte>
+            <EN>
+                &lt;span&gt; COSMOS CINE &lt;/span&gt; is a great platform for streaming enjoyable cinematic content for your relaxing evenings.
+            </EN>
+            <FR>
+                &lt;span&gt; COSMOS CINE &lt;/span&gt; est une grande plateforme de diffusion de contenu cinématographique agréable pour vos soirées de détente.
+            </FR>
+        </texte>
+        <texte>
+            <EN>
+                At &lt;span&gt; COSMOS CINE &lt;/span&gt; you can &lt;span&gt; consult &lt;/span&gt;, &lt;span&gt; rate &lt;/span&gt; and &lt;span&gt; comment &lt;/span&gt; an extensive catalog of movies and series that is constantly updated.
+            </EN>
+            <FR>
+                Chez &lt;span&gt; COSMOS CINE &lt;/span&gt;, Vous pouvez &lt;span&gt; consulter &lt;/span&gt;, &lt;span&gt; évaluer &lt;/span&gt; et &lt;span&gt; commenter &lt;/span&gt; un vaste catalogue de films et séries continuellement mis à jour.
+            </FR>
+        </texte>
+    </textes>
+    <bouton>
+        <EN>
+            Get Start
+        </EN>
+        <FR>
+            Commencez
+        </FR>
+    </bouton>
+</index>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue>
+    <titre>
+        <EN>
+            Catalog 
+        </EN>
+        <FR>
+            Catalogue
+        </FR>
+    </titre>
+    <info>
+        <EN>
+            Movie Details 
+        </EN>
+        <FR>
+            Détails du film
+        </FR>
+    </info>
+    <erreur>
+        <EN>
+            Error occurred: movie not found !
+        </EN>
+        <FR>
+            Erreur Survenue: Film Introuvable !
+        </FR>
+    </erreur>
+
+    <com>
+        <EN>
+            No comment !
+        </EN>
+        <FR>
+            Pas de commentaire !
+        </FR>
+    </com>
+    <comTitre>
+        <EN>
+            Comment !
+        </EN>
+        <FR>
+            Laissez un commentaire !
+        </FR>
+    </comTitre>
+    <notation>
+        <EN>
+            Rate this movie 
+        </EN>
+        <FR>
+            Notez ce film
+        </FR>
+    </notation>
+
+    <bouton>
+        <EN>
+            Comment 
+        </EN>
+        <FR>
+            Commentez
+        </FR>
+    </bouton>
+
+    <connex>
+        <EN>
+            Login to comment 
+        </EN>
+        <FR>
+            Connectez vous pour commenter
+        </FR>
+    </connex>
+    <nombre>
+        <EN>
+            Comments / Rates
+        </EN>
+        <FR>
+            Commentaires / Notes
+        </FR>
+    </nombre>
+    
+</catalogue>

@@ -1,0 +1,4 @@
+Ce que je n'ai pas fait
+1- Traduction du contenu des films
+2- Système d'envoi de courriel
+3- Renvoi des données sur un fichier json ou xml

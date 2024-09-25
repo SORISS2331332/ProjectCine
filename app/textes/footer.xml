@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<footer>
+    <informations>
+        <information>
+            <EN>
+                Help Center
+            </EN>
+            <FR>
+                Centre d'aide
+            </FR>
+        </information>
+        <information>
+            <EN>
+                Privacy Policy
+            </EN>
+            <FR>
+                Règles de confidentialités
+            </FR>
+        </information>
+        <information>
+            <EN>
+                Contact Us
+            </EN>
+            <FR>
+                Nous contacter
+            </FR>
+        </information>
+    </informations>
+    <titre>
+        <EN>
+            Subscribe to our newsletter!
+        </EN>
+        <FR>
+            Abonne-toi à notre infolettre !
+        </FR>
+    </titre>
+    <texte>
+        <EN>
+            email@email.com
+        </EN>
+        <FR>
+            courriel@couriel.com
+        </FR>
+    </texte>
+    <bouton>
+        <EN>
+            Submit
+        </EN>
+        <FR>
+            Soumettre
+        </FR>
+    </bouton>
+    <copyright>
+        <EN>
+            Students Work,	All rights reserved.
+        </EN>
+        <FR>
+            Travaux étudiants,	Tous droits réservés.
+        </FR>
+    </copyright>
+</footer>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studios>
+    <titre>
+        <EN>
+            Studios
+        </EN>
+        <FR>
+            Studios
+        </FR>
+    </titre>
+
+    <tableau>
+        <titre>
+            <EN>
+                The Studios
+            </EN>
+            <FR>
+                Les Studios
+            </FR>
+        </titre>
+        <nom>
+            <EN>
+                Name
+            </EN>
+            <FR>
+                Nom
+            </FR>
+        </nom>
+        <date>
+            <EN>
+                Creation's Date
+            </EN>
+            <FR>
+                Date de Création
+            </FR>
+        </date>
+        <adresse>
+            <EN>
+                Adress
+            </EN>
+            <FR>
+                Adresse
+            </FR>
+        </adresse>
+        <province>
+            <EN>
+                Province
+            </EN>
+            <FR>
+                Province
+            </FR>
+        </province>
+        <pays>
+            <EN>
+                Country
+            </EN>
+            <FR>
+                Pays
+            </FR>
+        </pays>
+    </tableau>
+</studios>

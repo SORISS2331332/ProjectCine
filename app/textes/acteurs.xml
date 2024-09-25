@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acteurs>
+    <titre>
+        <EN>
+            Actors
+        </EN>
+        <FR>
+            Acteurs
+        </FR>
+    </titre>
+    <tableau>
+        <titre>
+            <EN>
+                The Actors
+            </EN>
+            <FR>
+                Les Acteurs
+            </FR>
+        </titre>
+        <prenom>
+            <EN>
+                Nickname
+            </EN>
+            <FR>
+                Prénom
+            </FR>
+        </prenom>
+        <nom>
+            <EN>
+                Name
+            </EN>
+            <FR>
+                Nom
+            </FR>
+        </nom>
+        <taille>
+            <EN>
+                Height (m)
+            </EN>
+            <FR>
+                Taille (m)
+            </FR>
+        </taille>
+        <nation>
+            <EN>
+                Nationality
+            </EN>
+            <FR>
+                Nationalité
+            </FR>
+        </nation>
+        <age>
+            <EN>
+                Age (years)
+            </EN>
+            <FR>
+                Âge (ans)
+            </FR>
+        </age>
+        <ville>
+            <EN>
+                City
+            </EN>
+            <FR>
+                Ville
+            </FR>
+        </ville>
+        <pays>
+            <EN>
+                Country
+            </EN>
+            <FR>
+                Pays de Résidence
+            </FR>
+        </pays>
+        <revenu>
+            <EN>
+                Income ($)
+            </EN>
+            <FR>
+                Revenu (en $)
+            </FR>
+        </revenu>
+    </tableau>
+
+    
+</acteurs>

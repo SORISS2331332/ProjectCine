@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<films>
+    <film>
+        <titre>
+            <EN>Transporter</EN>
+            <FR>Transporteur</FR>
+        </titre>
+        <note>
+            ★★★☆☆
+        </note>
+        <type>
+            <EN>
+                Thriller, Action, Violent
+            </EN>
+            <FR>
+                Thriller, Action, Violent
+            </FR>
+        </type>
+        <lien>action.png</lien>
+    </film>
+    <film>
+        <titre>
+            <EN>Spider Man 1</EN>
+            <FR>Spider Man 1</FR>
+        </titre>
+        <note>
+            ★★★★☆
+        </note>
+        <type>
+            <EN>
+                Action, Imaginary
+            </EN>
+            <FR>
+                Action, Imaginaire
+            </FR>
+        </type>
+        <lien>imaginaire.jpg</lien>
+    </film>
+    <film>
+        <titre>
+            <EN>Discovery</EN>
+            <FR>A la découverte</FR>
+        </titre>
+        <note>
+            ★★★★☆
+        </note>
+        <type>
+            <EN>
+                Adventure
+            </EN>
+            <FR>
+                Aventure
+            </FR>
+        </type>
+        <lien>aventure.jpg</lien>
+    </film>
+    <film>
+        <titre>
+            <EN>The Blacklist</EN>
+            <FR>La Liste Noire</FR>
+        </titre>
+        <note>
+            ★★★★☆
+        </note>
+        <type>
+            <EN>
+                Action, Police
+            </EN>
+            <FR>
+                Action, Policier
+            </FR>
+        </type>
+        <lien>serie.jpg </lien>
+    </film>
+    <film>
+        <titre>
+            <EN>Invasion</EN>
+            <FR>Invasion</FR>
+        </titre>
+        <note>
+            ★★★★☆
+        </note>
+        <type>
+            <EN>
+                Fantastic
+            </EN>
+            <FR>
+                Fantastique
+            </FR>
+        </type>
+        <lien>fantastique.jpg</lien>
+    </film>
+    <detail>
+        <EN>
+            Details
+        </EN>
+        <FR>
+            Détails
+        </FR>
+    </detail>
+</films>

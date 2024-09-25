@@ -1,0 +1,607 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*----Start Header css----*/
+.Entete{
+    flex: 10%;
+    display: flex;
+    padding: auto;
+    background-color: rgb(231, 155, 14);
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+}
+.langueControl{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+#Connect{
+    margin-left: 10px;
+
+}
+#Connect button{
+    color: white;
+    background-color: orange;
+    border-radius: 30%;
+    
+}
+#Connect button:hover{
+    background-color: rgb(25, 61, 97);
+    transform: scale(1.5);
+}
+.langueControl div{
+    color: white;
+    font-weight: bolder;
+
+}
+
+header img {
+    margin: 2px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+header nav a, .connexionBouton a{
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+#Deconnect button{
+        background-color: red;
+        margin-top: 10px;
+        color: white;
+        border-radius: 7px;
+        border: 2px solid white;
+}
+#Deconnect button:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 8px  rgb(25, 61, 97);
+}
+header nav a i, .connexionBouton a i{
+    padding: 5px;
+
+}
+
+header nav a:hover, .connexionBouton a:hover{
+    transform: scale(1.2);
+    background-color: rgb(25, 61, 97);
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px  rgb(87, 92, 92);
+}
+
+.active{
+    background-color: rgb(25, 61, 97);
+    border-radius: 3px;
+}
+.connexionBouton p{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+/*----End Header css----*/
+
+
+/*----Start Index Container css----*/
+.contain{
+    flex: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 61, 97);
+}
+.container-image{
+    margin-right: 15%;
+    width: 40%;
+    
+}
+.container-image img{
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+.container-text{
+    width: 30%;
+    text-align: justify;
+    color: white;
+    font-weight: bolder;
+}
+.container-text span {
+    color: orange;
+}
+.container-text article button{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 2px solid white;
+    height: 30px;
+}
+.container-text article button a{
+    text-decoration: none;
+    color: white;
+}
+.container-text article button:hover{
+    transform: scale(1.2);
+    box-shadow: 3px 3px 8px  rgb(216, 161, 10);
+}
+
+/*----End Index Container css----*/
+
+
+/*----Start table Container css----*/
+.table_container{
+    flex: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 61, 97);
+}
+
+.studio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.studio table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: aliceblue;
+}
+tr:nth-child(even) {
+    background-color: #0e588a;
+}
+table th{
+    padding: 10px;
+    background-color: rgb(216, 161, 10);
+    border: 2px solid rgb(233, 238, 240);
+}
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(233, 238, 240);
+}
+/*----End table Container css----*/
+
+/*----Start Catalogue Container css----*/
+.containeur{
+    flex: 80%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(25, 61, 97);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.selection{
+    display: flex;
+    flex-direction: row;
+}
+.selection form{
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.select option{
+    color: black;
+    font-weight: bold;
+}
+.select {
+    color: black;
+}
+.catalogue-wrapper{
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 400px));
+    place-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    }
+
+    .carte{
+        background : var(--lightColor);
+        width : 250px;
+        height : 500px;
+    }
+
+    .carte h1{
+        margin : 5px 0 0 0;
+        font-size: 25px;
+    }
+
+    .carte .text{
+        padding : 5px;
+        color: aqua;
+        
+    }
+    .carte .text div .note{
+        color: yellow;
+    }
+
+    .carte #details-button-wrapper{ 
+        display : flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .carte #details-button-wrapper button{ 
+        background-color: orange;
+        color: white;
+        border-radius: 7px;
+        border: 2px solid white;
+        width: 40%;
+    }
+    .carte #details-button-wrapper button a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    #ima1,#ima2,#ima3{
+
+        width: 220px;
+        height : 350px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .erreurMessage{
+        color:  red;
+    }
+    .carte #details-button-wrapper button:hover{ 
+        transform: scale(1.2);
+        box-shadow: 3px 3px 8px  rgb(216, 161, 10);
+    }
+
+    .carte .text > div{ 
+        display : flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .carte .text > div p{ 
+        margin: 5px;
+    }
+
+    .carte .image-wrapper{
+        display : flex;
+        justify-content: space-around;
+        height : 70%;
+    }
+
+    .carte img{
+        width: 100%;
+        height : auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .carte:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        cursor : pointer;
+    }
+
+    .colorCellule{
+        background-color: green;
+    }
+
+
+
+.details{
+    flex: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(25, 61, 97);
+    padding: 20px;
+}
+.details .card{
+    flex: 30%;
+    height: 500px;
+}
+.commentaire{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+    border: 2px solid white;
+    overflow: auto;
+    overscroll-behavior: contain;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    flex: 25%;
+    
+}
+
+.commentaire .desc{
+    padding: 5px;
+    border: 2px solid orange;
+}
+
+.commentaire .desc .note{
+    color: yellow;
+}
+.details div table{
+    border-collapse: collapse;
+    color: aliceblue;
+}
+.comment-form{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(37, 48, 98);
+}
+
+.comment-form div select{
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid blue;
+    padding: 10px;
+    width: 70px;
+}
+
+
+
+.form-group{
+    margin: 10px;
+}
+.form-group textarea{
+    color: black;
+}
+.form-group input{
+    visibility: hidden;
+}
+.btn{
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.btn:hover{
+    transform: scale(1.2);
+    box-shadow: 3px 3px 8px  rgb(216, 161, 10);
+}
+.filmActeurs{
+    margin: 20px;
+    flex: 30%;
+}
+/*----End Catalogue Container css----*/
+
+
+/*----Start Connexion Container css----*/
+.form-container{
+    flex: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(25, 61, 97);
+}
+h1{
+    flex: 10%;
+    color: white;
+}
+.message{
+    color: rgb(237, 9, 9);
+    font-size: 25px;
+    font-weight: 400;
+}
+.form-container >div{
+    flex: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container form {
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+.form-container form div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-container form div .lienCreation a{
+    color: orange;
+}
+.form-container form div label{
+    width: 40%;
+    margin-right: 5px;
+}
+.form-container form div input{
+    width: 60%;
+}
+#Connexion{
+    display: flex;
+    justify-content: flex-end;
+}
+#Connexion button{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+#Connexion button a{
+    text-decoration: none;
+    color: white;
+}
+#Connexion button:hover{
+    transform: scale(1.2);
+    box-shadow: 3px 3px 8px  rgb(216, 161, 10);
+    
+}
+
+.register form section{
+    
+    display: flex;
+    flex-direction: row;
+}
+.register form{
+    border: none;
+}
+.register form .infos{
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.register form .infos h1{
+    text-align: center;
+}
+.register form .adresse{
+    border: 2px solid orange;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.register button{
+    width: 20%;
+    height: 35px;
+    font-size: large;
+    font-weight: bolder;
+}
+.obligatoire{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*----End Connexion Container css----*/
+
+
+/*----Start Footer css----*/
+#footerPage{
+    flex: 10%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 155, 14);
+    color: white;
+    
+}
+.footerLinks{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.informations {
+    margin-left: 8%;
+}
+.reseaux {
+    margin-right: 15%;
+}
+ul{
+    list-style-type: none;
+    
+}
+.informations ul li {
+    margin: 15px;
+}
+.informations ul li a i{
+    padding: 5px;
+    font-size: 20px;
+}
+.informations ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+.informations ul li a:hover{
+    
+    transform: scale(1.2);
+    color: white;
+    background-color: rgb(25, 61, 97);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+footer .fa-facebook,footer .fa-instagram,footer .fa-youtube{
+    font-size: 30px;
+    margin-top: 5px;
+    width: 30px;
+    text-align: center;
+}
+.reseaux ul li i{
+    padding: 3px;
+}
+
+.fa-facebook{
+    text-decoration: none;
+    padding: 5px;
+    color: blue;
+    font-weight: bolder;
+}
+.fa-instagram{
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(236, 50, 122);
+    font-weight: bolder;
+}
+.fa-youtube{
+    text-decoration: none;
+    padding: 5px;
+    color: red;
+    font-weight: bolder;
+    
+}
+.fa-facebook:hover{
+    transform: scale(1.2);
+    color: white;
+    background-color: rgb(25, 61, 97);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+.fa-instagram:hover, .fa-youtube:hover{
+    transform: scale(1.2);
+    background-color: rgb(25, 61, 97);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+/*----End Footer css----*/
