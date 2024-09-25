@@ -55,7 +55,7 @@
                             <input type="text" name="user" value='. $user.'>
                         </div>
                         <div class="form-group">
-                            <textarea name="comment" cols="30" rows="10" placeholder="message"></textarea>
+                            <textarea name="comment" cols="60" rows="10" placeholder="message"></textarea>
                         </div>
 
                         <div>

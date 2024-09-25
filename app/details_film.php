@@ -133,51 +133,6 @@
                     afficherFilm($indice,$film["titre"],$film["note"],$film["nom"],$film["description"],$filmsXml->detail->$langue, $film["noFilm"]);
                     $indice++;
                 }
-                
-
-
-                echo "<div class='filmActeurs'>";
-
-                $maRequete = "SELECT *, TIMESTAMPDIFF(year,dateNaissance, now()) AS Age, 'colorCellule' AS classe, CONCAT(FORMAT(revenu,2),' $') AS Revenu FROM tblActeur AS Ac
-                    INNER JOIN tblFilmActeur Af ON Af.noActeur = Ac.noActeur
-                    INNER JOIN tblAdresse Ad ON Ad.noAdresse = Ac.noAdresse
-                    WHERE revenu >= (SELECT AVG(revenu) FROM tblFilmActeur) AND noFilm = ?
-                    UNION 
-                    SELECT *, TIMESTAMPDIFF(year,dateNaissance, now()) As Age, '' AS classe, CONCAT(FORMAT(revenu,2),' $') AS Revenu  FROM tblActeur As Ac
-                    INNER JOIN tblFilmActeur Af ON Af.noActeur = Ac.noActeur
-                    INNER JOIN tblAdresse Ad ON Ad.noAdresse = Ac.noAdresse
-                    WHERE revenu < (SELECT AVG(revenu) FROM tblFilmActeur) AND noFilm = ?
-                    ORDER BY prenom,nom";
-                $reponse = $connexion->prepare($maRequete);
-                $reponse->execute([$indiceFilm,$indiceFilm]);
-
-                echo"<table>
-                        <tr>
-                            <th>". $acteurs->tableau->prenom->$langue ."</th>
-                            <th>".$acteurs->tableau->nom->$langue ."</th>
-                            <th>".$acteurs->tableau->taille->$langue ."</th>
-                            <th>".$acteurs->tableau->nation->$langue ."</th>
-                            <th>". $acteurs->tableau->age->$langue ."</th>
-                            <th>".$acteurs->tableau->pays->$langue ."</th>
-                            <th>".$acteurs->tableau->revenu->$langue."</th>
-                        </tr>";
-                    while($acteur = $reponse->fetch()){
-                        echo("
-                            <tr>
-                                <td>".$acteur['prenom']."</td>
-                                <td>".$acteur['nom']."</td>".
-                                "<td>".$acteur['taille']."</td>
-                                <td>".$acteur['nationalite']."</td>
-                                <td>".$acteur['Age']."</td>".
-                                "<td>".$acteur['pays']."</td>".
-                                "<td class = ".$acteur['classe'].">".$acteur['Revenu']."</td>
-                            </tr>
-                        ");
-                    }
-                    echo (" </table>
-                    </div>");
-                    
-                    
                     //Système de commentaire
                     include "commentaire.php"; 
                 }
