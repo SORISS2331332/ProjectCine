@@ -77,7 +77,7 @@
     else{
         echo "<h3>".$catalog->connex->$langue."</h3>";
     }
-
+    echo '</div>';
     
 ?>
 
