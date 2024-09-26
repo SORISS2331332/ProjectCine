@@ -3,5 +3,5 @@ This project is a film streaming platform that allows users to watch and share a
 
 # Features:
 ---Film Library: Access to a diverse collection of movies.<br>
---Intuitive Search: Easily find your favorite films with sorting and filtering options.<br>
+---Intuitive Search: Easily find your favorite films with sorting and filtering options.<br>
 ---Responsive User Interface: Enjoy a seamless experience across all devices.<br>
