@@ -5,20 +5,66 @@ body{
 }
 
 /*----Start Header css----*/
-.Entete{
-    flex: 10%;
-    display: flex;
-    padding: auto;
+
+.en-tete{
     background-color: rgb(231, 155, 14);
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    width: 100%;
 }
 .langueControl{
     display: flex;
     flex-direction: row;
     margin-top: 15px;
+    margin-left: 15px;
+}
+
+.profil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.profil>form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles globaux (pour tous les écrans) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Media query pour les écrans de 375x660 pixels */
+@media (max-width: 375px) and (max-height: 667px) {
+    .profil{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profil>form{
+        width: 50%;
+    }
+    .connexionBouton form{
+        display: flex;
+        flex-direction: column;
+    }
+    .connexionBouton form>div{
+        width: 50%;
+    }
+}
+
+/* Autres styles pour des écrans plus grands */
+@media (min-width: 376px) {
+    /* Styles pour les écrans plus larges */
+    /* ... */
+}
+
+.connexionBtn{
+    display: inline-block;
+    align-items: end;
 }
 #Connect{
     margin-left: 10px;
@@ -32,7 +78,7 @@ body{
 }
 #Connect button:hover{
     background-color: rgb(25, 61, 97);
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 .langueControl div{
     color: white;
@@ -40,13 +86,13 @@ body{
 
 }
 
-header img {
+nav img {
     margin: 2px;
     height: 80px;
     width: 80px;
     border-radius: 50%;
 }
-header nav a, .connexionBouton a{
+.nav-item a, .connexionBouton a{
     margin: 10px;
     color: white;
     padding: 10px;
@@ -56,21 +102,23 @@ header nav a, .connexionBouton a{
 }
 #Deconnect button{
         background-color: red;
-        margin-top: 10px;
+        padding: 10px;
         color: white;
-        border-radius: 7px;
+        border-radius: 20px;
         border: 2px solid white;
+        margin-left : 10px;
+        
 }
 #Deconnect button:hover{
     transform: scale(1.1);
     box-shadow: 3px 3px 8px  rgb(25, 61, 97);
 }
-header nav a i, .connexionBouton a i{
+.nav-item a i, .connexionBouton a i{
     padding: 5px;
 
 }
 
-header nav a:hover, .connexionBouton a:hover{
+.nav-item a:hover, .connexionBouton a:hover{
     transform: scale(1.2);
     background-color: rgb(25, 61, 97);
     text-decoration: none;
@@ -79,7 +127,8 @@ header nav a:hover, .connexionBouton a:hover{
     box-shadow: 2px 2px 5px  rgb(87, 92, 92);
 }
 
-.active{
+.nav-item .main{
+    color: white;
     background-color: rgb(25, 61, 97);
     border-radius: 3px;
 }
@@ -128,17 +177,18 @@ header nav a:hover, .connexionBouton a:hover{
 .container-text article button{
     background-color: orange;
     color: white;
-    font-weight: bold;
     border-radius: 7px;
     border: 2px solid white;
-    height: 30px;
+    font-weight: bold;
+    padding: 10px;
 }
 .container-text article button a{
     text-decoration: none;
     color: white;
+    padding: 30px 20px;
 }
 .container-text article button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 3px 3px 8px  rgb(216, 161, 10);
 }
 
@@ -156,33 +206,24 @@ header nav a:hover, .connexionBouton a:hover{
     background-color: rgb(25, 61, 97);
 }
 
-.studio {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10%;
+.table_container div h1 {
+    color: white;
+    padding: 20px;
 }
-.studio table {
-    border-collapse: collapse;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    color: aliceblue;
-}
-tr:nth-child(even) {
+
+.table_container tr:nth-child(even) {
     background-color: #0e588a;
 }
-table th{
+.table_container table th{
     padding: 10px;
     background-color: rgb(216, 161, 10);
     border: 2px solid rgb(233, 238, 240);
 }
-table td {
+.table_container table td {
     padding: 10px;
     text-align: center;
     border: 2px solid rgb(233, 238, 240);
+    color: white;
 }
 /*----End table Container css----*/
 
@@ -228,6 +269,7 @@ table td {
         background : var(--lightColor);
         width : 250px;
         height : 500px;
+        margin-top: 50px;
     }
     .carte h1{
         margin : 5px 0 0 0;
@@ -373,15 +415,16 @@ table td {
 .form-group input{
     visibility: hidden;
 }
-.btn{
+.comment-btn{
+
     background-color: orange;
+    padding: 10px;
     color: white;
-    font-weight: bolder;
+    border-radius: 20px;
     border: 2px solid white;
-    border-radius: 10px;
 }
-.btn:hover{
-    transform: scale(1.2);
+.comment-btn:hover{
+    transform: scale(1.1);
     box-shadow: 3px 3px 8px  rgb(216, 161, 10);
 }
 .filmActeurs{
@@ -564,7 +607,8 @@ footer .fa-facebook,footer .fa-instagram,footer .fa-youtube{
     text-align: center;
 }
 .reseaux ul li i{
-    padding: 3px;
+    display: inline-block;
+    padding-right: 38px;
 }
 
 .fa-facebook{
@@ -584,7 +628,6 @@ footer .fa-facebook,footer .fa-instagram,footer .fa-youtube{
     padding: 5px;
     color: red;
     font-weight: bolder;
-    
 }
 .fa-facebook:hover{
     transform: scale(1.2);

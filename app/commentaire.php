@@ -69,7 +69,7 @@
                             </select>
                         </div>
                         <br>
-                        <button class="btn">'.$catalog->bouton->$langue.'</button>
+                        <button class="comment-btn">'.$catalog->bouton->$langue.'</button>
                     </form>
                 </div>');
             }

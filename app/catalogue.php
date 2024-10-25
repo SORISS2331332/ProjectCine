@@ -13,58 +13,50 @@
             $tabImg[$i] = $img["lien"];
             $i++;
         }
-        echo ("
+        echo ('
             
-            <div class='carte'>
-                    <div class='image-wrapper'>
-                        <div class='container'> 
-                            <div id='myCarousel".$indice."' class='carousel slide' data-ride='carousel'>
-                                <!-- Indicators -->
-                                <ol class='carousel-indicators'>
-                                    <li data-target='#myCarousel".$indice."' data-slide-to='0' class='active'></li>
-                                    <li data-target='#myCarousel".$indice."' data-slide-to='1'></li>
-                                    <li data-target='#myCarousel".$indice."' data-slide-to='2'></li>
-                                </ol>
-                        
-                                <!-- Wrapper for slides -->
-                                <div class='carousel-inner'>
-                                    <div  class='item active'>
-                                        <img id='ima1' src='".$tabImg[0]."' alt='".$titre."'>
+            <div class="carte">
+                    <div class="image-wrapper">
+                        <div class="container"> 
+
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img id="ima1" src="'.$tabImg[0].'" class="d-block w-100" alt="image 1">
                                     </div>
-                                    <div  class='item'>
-                                        <img id='ima2' src='".$tabImg[1]."' alt='".$titre."'>
+                                    <div class="carousel-item">
+                                    <img id="ima2" src="'.$tabImg[1].'" class="d-block w-100" alt="image 2">
                                     </div>
-                                    <div  class='item'>
-                                        <img id='ima3' src='".$tabImg[2]."' alt='".$titre."'>
+                                    <div class="carousel-item">
+                                    <img id="ima3" src="'.$tabImg[2].'" class="d-block w-100" alt="image 3">
                                     </div>
                                 </div>
-                        
-                                <!-- Left and right controls -->
-                                <a class='left carousel-control' href='#myCarousel".$indice."' data-slide='prev'>
-                                    <span class='glyphicon glyphicon-chevron-left'></span>
-                                    <span class='sr-only'>Previous</span>
-                                </a>
-                                <a class='right carousel-control' href='#myCarousel".$indice."' data-slide='next'>
-                                    <span class='glyphicon glyphicon-chevron-right'></span>
-                                    <span class='sr-only'>Next</span>
-                                </a>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
+                            
                         </div>
                     </div>
                     
-                    <div class='text'>
-                        <h1>$titre</h1>
+                    <div class="text">
+                        <h1>'.$titre.'</h1>
                         <div>
-                            <p>$type : $detailType</p>
-                            <p class='note'>Note : ".afficherNoteFilm($note)." (".$note." / 5)</p>
+                            <p>'.$type.' : '.$detailType.'</p>
+                            <p class="note">Note : '.afficherNoteFilm($note).' ('.$note.' / 5)</p>
                         </div>
-                        <div id='details-button-wrapper'>
-                            <button><a href ='details_film.php?index=".$numero."'>".$detail."</a></button>
+                        <div id="details-button-wrapper">
+                            <button><a href ="details_film.php?index='.$numero.'">'.$detail.'</a></button>
                         </div>
                     </div>
             </div>
             
-        ");
+       ');
     }
     function afficherNoteFilm($note){
         if($note < 2){
@@ -83,7 +75,6 @@
             return"★★★★★";
         }
     }
-    include "includes/changerSession.php";
 ?>
 <?php include "includes/checkCookie.php"?>
 <html lang="fr">
@@ -93,9 +84,8 @@
     <title><?php echo $catalog->titre->$langue; ?> | Cosmos Ciné</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link rel = 'stylesheet' href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
-    <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-    <script src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <!-- Start Header -->
@@ -106,37 +96,17 @@
 
     <!-- Start Container -->
     <div class="containeur">
-        <div class="selection">
-            <form class='langueControl' method='post' action='catalogue.php'> 
-                <div>
-                <?php echo $selection->filtre->titre->$langue ?> 
-                <select class="select" name="filtre" >
-                        <option value="Action">Action</option>
-                        <option value="Animation">Animation</option>
-                        <option value="Documentaire"><?php echo $selection->filtre->options->option[0]->$langue ?></option>
-                        <option value="Drame"><?php echo $selection->filtre->options->option[1]->$langue ?></option>
-                        <option value="Horreur"><?php echo $selection->filtre->options->option[2]->$langue ?></option>
-                        <option value="Comédie"><?php echo $selection->filtre->options->option[3]->$langue ?></option>
-                        <option value="Science-fiction">Science-fiction</option>
-                    </select>
-                </div>
-                <div id="Connect">
-                    <button type="submit">OK</button>
-                </div>
-            </form>
-            <form class='langueControl' method='post' action='catalogue.php'> 
-                <div>
-                <?php echo $selection->trier->titre->$langue ?>
-                <select class="select" name="tri" >
-                    <option value="titre"><?php echo $selection->trier->options->option[0]->$langue ?></option>
-                    <option value="note"><?php echo $selection->trier->options->option[1]->$langue ?></option>
-                    </select>
-                </div>
-                <div id="Connect">
-                    <button type="submit">OK</button>
-                </div>
-            </form>
-        </div>
+        <nav class="navbar navbar-light ">
+
+            <div class="container-fluid">
+                <form class="d-flex">
+                    <!-- A gerer la recherche-->
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </nav>
+
         <div class="catalogue-wrapper">
         <?php 
             include "includes/connexionBD.php";
